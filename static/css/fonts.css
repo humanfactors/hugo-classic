@@ -1,7 +1,26 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Avenir Next', Avenir, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+@font-face {
+  font-family: "GoMono";
+  src: url('fonts/Go-Mono.ttf');
 }
+
+
+body {
+  font-family: "Roboto", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+pre,
 code {
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 85%;
+  font-family: "GoMono", monospace, serif;
+  font-size: 95%;
+}
+
+h1 {
+    font-family: "Overpass", serif;
+}
+
+.site-nav {
+  font-family: "Overpass", serif;
+  font-size: 1rem;
 }

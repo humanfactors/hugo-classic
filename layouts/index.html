@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+<div class="about">
+    <div class="author-avatar-wrapper">
+        <div style="background-image: url({{  .Site.Params.avatar }});" class="author-avatar"></div>
+    </div>
+    
+    <div class="about-text">
+
+        {{ .Content }}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}
