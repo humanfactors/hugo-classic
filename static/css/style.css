@@ -60,12 +60,16 @@ p.subtitle {
   line-height: 1;
 }
 
-p,
-ol,
-ul {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+
+p, ol, ul { font-size: 1.4rem;
+  line-height: 1.75rem; }
+
+p { margin-top: 1rem;
+/* margin-bottom: 1.4rem; */
+padding-right: 0;
 }
+
+
 
 /* Table of Contents, if wanted
 
@@ -99,17 +103,20 @@ output:
 }
 
 .article-title {
-  margin: 0;
-  padding: 0;
-  font-size: 2.2em;
-  line-height: 1em;
-  font-weight: bold;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+  line-height: 1;
+
+  /* font-weight: bold; */
 }
 
 .article-subtitle {
   margin: 0;
   padding: 0;
-  font-style: italic
+  font-style: italic;
+  font-size: 1.4em;
 }
 
 .terms {
@@ -171,7 +178,7 @@ a:link::-moz-selection {
   width: 100%;
   height: 1.75rem;
   font-size: .875rem;
-  border-bottom: 1px solid #000;
+  /* border-bottom: 1px solid #000; */
 }
 
 .site-nav ul,
@@ -303,9 +310,10 @@ tr:nth-child(even) {
   padding-left: 2em;
 }
 
-hr {
-  height: 1px;
+hr { display: block;
+  height: 2px;
+  /* width: 55%; */
   border: 0;
-  border-top: solid 1px lightgray;
-  margin: 0;
-}
+  border-top: 1px solid rgb(165, 161, 161);
+  /* margin: 1em 0; */
+  padding: 0; }
