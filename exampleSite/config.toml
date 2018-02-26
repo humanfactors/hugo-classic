@@ -22,10 +22,7 @@ footnotereturnlinkcontents = "↩"
     name = "Tags"
     url = "/tags/"
     weight = 3
-[[menu.feed]]
-    name = "Subscribe"
-    url = "/index.xml"
 
 [params]
-    description = "A simple, minimal blog for those who love text."
-    footer = "Open-Source | [Github](https://github.com/goodroot/hugo-classic) | [Twitter](https://twitter.com/thegoodroot)"
+    description = "Michael Wilon."
+    footer = "Open-Source • [Github](https://github.com/goodroot/hugo-classic) • [Twitter](https://twitter.com/thegoodroot)"

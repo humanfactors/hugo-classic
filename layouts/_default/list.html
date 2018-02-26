@@ -9,11 +9,9 @@
 <ul>
   {{ range (where .Data.Pages "Section" "!=" "") }}
   <li>
-      <span class="date">{{ .Date.Format "2006/01/02" }}</span>
-
-      <span class="date">{{ .Params.categories }}</span>
-    <a href="{{ .URL }}">{{ .Title }}</a>
-  </li>
+      <span class="date">{{ .Date.Format "Jan 2006" }}  </span>
+      <a href="{{ .URL }}">{{ .Title }} </a>
+    </li>
   {{ end }}
 </ul>
 
