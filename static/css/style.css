@@ -1,9 +1,10 @@
 body {
-  max-width: 800px;
+  width: 800px;
+  max-width: 87.5%;
   line-height: 1.5em;
   margin-left: auto;
-  margin-right: 10%;
-  padding-left: 12.5%;
+  margin-right: auto;
+  /* padding-left: 12.5%; */
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   background-color: #fffff8;
 }
@@ -161,6 +162,10 @@ a:link::-moz-selection {
 
 @media (min-width: 601px) {}
 
+.nav {
+  margin-right: 10%;
+  margin-left: 10%;
+}
 .site-nav {
   position: relative;
   width: 100%;
