@@ -25,6 +25,15 @@ code {
   font-family: "GoMono", monospace, serif;
 }
 
+hr {
+  border: 0; 
+  height: 1px;
+    /* width: 55%; */
+  /* background: #333;  */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
 h1 {
   font-weight: 400;
   margin-top: 1rem;
@@ -161,14 +170,6 @@ a:link::-moz-selection {
 
 /* Adjust background at your leisure! */
 
-@media (max-width: 600px) {
-  html {
-    /* font-size:0.1em; */
-  }
-}
-
-@media (min-width: 601px) {}
-
 .nav {
   margin-right: 10%;
   margin-left: 10%;
@@ -206,6 +207,27 @@ a:link::-moz-selection {
 .site-nav .current a {
   /* color: #fff */
 }
+
+.nav-divide {
+  clear: both;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .site-nav a {
+    font-size: 0.7em;
+    /* display: none; */
+  }
+  .site-title {
+    /* clear: both; */
+    /* text-indent:-9999px; */
+    /* display: inline-block; */
+  }
+  .site-nav {
+    height: 2.75rem;
+  }
+}
+
 
 /* Code Boxes */
 
@@ -298,11 +320,15 @@ tr:nth-child(even) {
   text-align: left;
 }
 
-.about-text {
-  text-align: justify;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  padding-bottom: 10px;
+
+
+@media only screen and (min-width: 500px) {
+  .about-text {
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding-bottom: 10px;
+  }
 }
 
 .about ul {
@@ -310,10 +336,3 @@ tr:nth-child(even) {
   padding-left: 2em;
 }
 
-hr { display: block;
-  height: 2px;
-  /* width: 55%; */
-  border: 0;
-  border-top: 1px solid rgb(165, 161, 161);
-  /* margin: 1em 0; */
-  padding: 0; }
