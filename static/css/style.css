@@ -1,28 +1,54 @@
 body {
-  width: 800px;
-  max-width: 87.5%;
+  /* max-width: 85%; */
   line-height: 1.5em;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* vertical-align: centre; */
   /* padding-left: 12.5%; */
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   background-color: #fffff8;
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  body {
+    width: 80%;
+  }
+  pre, code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 9pt;
+  }
+}
+
+
+/* Styles */
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  body {
+    width: 1100px;
+    margin: auto;
+    /* max-width: 80%; */
+  }
+}
+
+
 html {
   font-size: 15px;
+  margin: auto;
 }
 
 /* fonts */
-
-pre,
-code {
-  font-family: "GoMono", monospace, serif;
-  font-size: 95%;
-}
+pre, code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12pt;
+  }
 
 .date {
-  font-family: "GoMono", monospace, serif;
+  /* font-family: "GoMono", monospace, serif; */
 }
 
 hr {
@@ -76,8 +102,12 @@ p, ol, ul { font-size: 1.4rem;
 p { margin-top: 1rem;
 /* margin-bottom: 1.4rem; */
 padding-right: 0;
+font-family: 'Roboto', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+li {
+  font-family: 'Roboto', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 
 /* Table of Contents, if wanted
@@ -170,10 +200,14 @@ a:link::-moz-selection {
 
 /* Adjust background at your leisure! */
 
-.nav {
-  margin-right: 10%;
-  margin-left: 10%;
+.clearfix:after {
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
+
 .site-nav {
   position: relative;
   width: 100%;
@@ -190,7 +224,7 @@ a:link::-moz-selection {
 }
 
 .site-nav nav {
-  padding: 0 0.5rem
+  padding: 0 0.5rem;
 }
 
 .site-nav a {
@@ -200,6 +234,7 @@ a:link::-moz-selection {
   text-decoration: none;
   background: none;
   text-shadow: none;
+  clear: both;
   color: #B03851;
 }
 
@@ -210,6 +245,9 @@ a:link::-moz-selection {
 
 .nav-divide {
   clear: both;
+  /* margin-top: 2pt; */
+  /* display: inline-block; */
+
 }
 
 
@@ -225,6 +263,7 @@ a:link::-moz-selection {
   }
   .site-nav {
     height: 2.75rem;
+    
   }
 }
 
@@ -234,13 +273,11 @@ a:link::-moz-selection {
 pre {
   border: 1px solid #ddd;
   box-shadow: 5px 5px 5px #eee;
-  background: #f8f8f8;
+  background: #f0f0f0;
+  /* padding: 1em; */
+  overflow-y: auto;
   padding: 1em;
-  overflow-x: auto;
-}
 
-code {
-  background: #f9f9f9;
 }
 
 pre code {
@@ -254,7 +291,7 @@ iframe,
 video {
   max-width: 100%;
   border: solid 1px lightgray;
-  padding: 4px;
+  /* padding: 4px; */
 }
 
 main {

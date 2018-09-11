@@ -11,13 +11,5 @@
 
 {{ .Content }}
 
-<ul>
-  {{ range (where .Data.Pages "Section" "!=" "") }}
-  <li>
-      <span class="date">{{ .Date.Format "Jan 2006" }}  </span>
-      <a href="{{ .URL }}">{{ .Title }} </a>
-    </li>
-  {{ end }}
-</ul>
 
 {{ partial "footer.html" . }}
